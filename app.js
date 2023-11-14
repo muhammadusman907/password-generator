@@ -84,3 +84,14 @@ function valueCheck() {
         alert("not strong")
     }
 }
+
+function copyPassword() {
+    
+    valueCheckInput.select();
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(valueCheckInput.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + valueCheckInput.value);
+  }
